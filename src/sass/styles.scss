@@ -1,0 +1,69 @@
+body {
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 10%;
+    background-color: rgb(59, 159, 179);
+    border-radius: 15px;
+}
+
+label {
+    font-size: 2em;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+#userSubmit {
+    border-radius: 5px;
+    border: 2px solid rgb(39, 39, 39);
+    height: 50px;
+    width: 100px;
+    font-size: large;
+}
+
+.win {
+    animation: pulsating 2.5s infinite;
+}
+
+@keyframes pulsating {
+    0% {
+        scale: 100%;
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        scale:90%;
+        color: green;
+    }
+
+    75% {
+        color: purple;
+    }
+
+    100%{
+        scale:100%;
+        color: red;
+    }
+    
+}
